@@ -1,0 +1,124 @@
+body{
+    position: absolute;
+    left:0;
+	top:0;
+	height:100vh;
+	width: 100vw;
+    background-color: #8495d1;
+}
+
+#container{
+    width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+#C{
+    position: absolute;
+    display: inline-inline-block;
+    left: 10px;
+    top: 110px;
+    width: 200px;
+        height: 100px; /* as the half of the width */
+        background-color: black;
+        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 110px; /* 100px of height + 10px of border */
+        border: 10px black;
+        border-bottom: 0;
+        transform: rotate(-90deg);
+}
+
+#O {
+    position: absolute;
+        display: inline-block;
+    border: 10px solid black;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    left: 200px;
+top: 60px;
+    z-index: 86;
+}
+
+ #P1 {
+     position: absolute;
+         display: inline-block;
+     border: 10px solid black;
+     top: 110px;
+     left: 385px;
+display: inline-block;
+width: 200px;
+border: 10px black;
+background-color: black;
+    height: 100px; /* as the half of the width */
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px black;
+    border-bottom: 0;
+    transform: rotate(90deg);
+ }
+
+ #P2 {
+     position: absolute;
+         display: inline-block;
+     border: 8px solid black;
+     background-color: black;
+     top: 60px;
+     left: 425px;
+width: 1px;
+height: 300px;
+ }
+
+ #Y1 {
+
+     position: absolute;
+         display: inline-block;
+     border: 8px solid black;
+     background-color: black;
+     top: 60px;
+     left: 570px;
+width: 1px;
+height: 100px;
+transform: rotate(-30deg);
+ }
+
+ #Y2 {
+     position: absolute;
+         display: inline-block;
+     border: 8px solid black;
+     background-color: black;
+     top: 60px;
+     left: 625px;
+width: 1px;
+height: 100px;
+transform: rotate(30deg);
+ }
+
+#Y3 {
+    position: absolute;
+        display: inline-block;
+    border: 8px solid black;
+    background-color: black;
+    top: 150px;
+    left: 596px;
+width: 1px;
+height: 210px;
+animation-name: scale;
+}
+
+#container2{
+    transform: translateY(1.2vh);
+    background-color: green;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+.animation{
+	animation-name: scale;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+
+@keyframes slide {
+    100% { left: 0; }
+}
